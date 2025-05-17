@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizzaria</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles/output.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+    <div class="w-full h-full flex flex-col justify-center items-center">
+      <img
+        src="img/logo.png"
+        alt="logo pizzaria"
+        class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
+      />
+      <h1 class="text-4xl font-bold text-white mt-4 mb-2">Pizzaria do Mirador</h1>
+      <span class="text-white font-mediun">Rua pizza 10, mirador -Ma</span>
+      <div class="bg-green-600 px-4 py-2 rounded-lg mt-5" id="date-span">
+        <span class="text-white font-mediun">Seg á Dom -18:00 as 23:00</span>
+      </div>
+    </div>
+  </header>
+  <!-- Header -->
+
+  <h2 class="text-2xl text-center mt-9 mb-6 font-bold md:text-2xl">
+    Conheça o menu
+  </h2>
+
+  <!-- inicio menu -->
+  <div id="menu">
+    <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+
+      <!-- produto item -->
+      <div class="flex gap-2">
+        <img
+          src="img/p1.png"
+          alt="pizza de cogumelo"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotated-2 duration-300"
+        />
+        <div>
+          <p class="font font-bold">Pizza de cogumelo</p>
+          <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eum quo vero aperiam reiciendis</p>
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 40,00</p>
+            <button
+              class="bg-gray-900 px-5 rouded add-to-cart-btn"
+              data-name="Pizza de cogumelo"
+              data-price="40.00"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- fim produto item -->
+
+      <!-- produto item -->
+      <div class="flex gap-2">
+        <img
+          src="img/p2.png"
+          alt="pizza de pimentão"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotated-2 duration-300"
+        />
+        <div>
+          <p class="font font-bold">Pizza de pimentão</p>
+          <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eum quo vero aperiam reiciendis</p>
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 50,00</p>
+            <button
+              class="bg-gray-900 px-5 rouded add-to-cart-btn"
+              data-name="Pizza de pimentão"
+              data-price="50.00"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- fim produto item -->
+
+        <!-- produto item -->
+      <div class="flex gap-2">
+        <img
+          src="img/p3.png"
+          alt="pizza de calabresa"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotated-2 duration-300"
+        />
+        <div>
+          <p class="font font-bold">Pizza de calabresa</p>
+          <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eum quo vero aperiam reiciendis</p>
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 50,00</p>
+            <button
+              class="bg-gray-900 px-5 rouded add-to-cart-btn"
+              data-name="Pizza de calabresa"
+              data-price="50.00"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- fim produto item -->
+
+      <!-- produto item -->
+      <div class="flex gap-2">
+        <img
+          src="img/p4.png"
+          alt="pizza de Queijo"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotated-2 duration-300"
+        />
+        <div>
+          <p class="font font-bold">Pizza de queijo</p>
+          <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eum quo vero aperiam reiciendis</p>
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 60,00</p>
+            <button
+              class="bg-gray-900 px-5 rouded add-to-cart-btn"
+              data-name="Pizza de Queijo"
+              data-price="60.00"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- fim produto item -->
+    </main>
+
+    <div class="text-2xl mt-9 mb-6 font-bold md:text-2xl px-2 mb-16">
+        <h2 class="font-bold text-2xl">
+            Bebidas
+        </h2>
+    </div>
+
+    <!-- bebidas -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+
+         <!-- produto bebida -->
+      <div class="flex gap-2">
+        <img
+          src="img/refri-2.png"
+          alt="Guarana"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotated-2 duration-300"
+        />
+        <div>
+          <p class="font font-bold">Guaraná</p>
+          <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eum quo vero aperiam reiciendis</p>
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 10,00</p>
+            <button
+              class="bg-gray-900 px-5 rouded add-to-cart-btn"
+              data-name="guarana"
+              data-price="10.00"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- fim produto bebida -->
+
+      <!-- produto bebida -->
+      <div class="flex gap-2">
+        <img
+          src="img/refri-1.png"
+          alt="Coca-cola"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotated-2 duration-300"
+        />
+        <div>
+          <p class="font font-bold">Coca cola</p>
+          <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eum quo vero aperiam reiciendis</p>
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 10,00</p>
+            <button
+              class="bg-gray-900 px-5 rouded add-to-cart-btn"
+              data-name="Coca cola"
+              data-price="10.00"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- fim produto bebida -->
+
+
+    </div>
+
+     <!-- fim bebidas -->
+
+  </div>
+  <!-- fim menu -->
+
+   <!-- modal carrinho -->
+    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden">
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+            <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
+
+            <div id="cart-items" class="flex justify-between mb-2 flex col"></div>
+
+            <p class="font-bold">Total: <Span id="cart-total">0.00</Span></p>
+
+            <p class="font-bold mt-4">Endereço de entrega:</p>
+            <input 
+            type="text"
+            placeholder="Digiter seu Endereço completo..."
+            id="address"
+            class="w-full border-2 p-1 rounded my-1"
+            />
+            <p class="text-red-500 hidden" id="address-warn">Digite seu Endereço completo!</p>
+
+            <div class="flex items-center justify-between mt-5 w-full">
+                <button id="close-modal-btn" class="bg-red-500 text-white px-4 py-1 rounded">Fechar</button>
+                <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar pedido</button>
+            </div>
+
+
+        </div>
+    </div>
+
+
+     <!-- fim modal carrinho -->
+    
+   <!-- Botão carrinho footeer -->
+
+    <footer class="w-full bg-red-500 py-2 fixed bottom-0 z-40 flex items-center justify-center">
+        <button class="flex items-center gap-2 text-white font-bold"
+            id="cart-btn"
+            >
+            (<span id="cart-count">0</span>)
+            Veja meu carrinho
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+    </footer>
+
+    <!-- Fim Botão carrinho footeer -->
+
+</body>
+</html>
